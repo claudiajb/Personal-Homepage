@@ -38,7 +38,11 @@ document.querySelectorAll('a, button, .gallery-item, .blog-card, .stat-card, .fi
 });
 
 // ===================== PAGE TRANSITION =====================
+// Lightweight fade only — no delay on navigation
+const overlay = document.querySelector('.page-transition');
+
 window.addEventListener('DOMContentLoaded', () => {
+  // Fade in on arrive
   document.body.style.opacity = '0';
   requestAnimationFrame(() => {
     document.body.style.transition = 'opacity 0.25s ease';
@@ -203,7 +207,7 @@ if (particlesContainer) {
   for (let i = 0; i < 12; i++) {
     const p = document.createElement('div');
     const type = types[Math.floor(Math.random() * types.length)];
-    const size = Math.random() * 16 + 8;
+    const size = type === 'ring' ? Math.random() * 44 + 20 : Math.random() * 16 + 8;
     p.className = `particle ${type}`;
     p.style.cssText = `
       left: ${Math.random() * 90}%;
@@ -271,21 +275,11 @@ document.querySelectorAll('.magnetic-btn').forEach(btn => {
   });
 });
 
-// ===================== PARALLAX =====================
+// ===================== PARALLAX HERO TEXT =====================
 const heroBgText = document.querySelector('.hero-bg-text');
 const pageBgText = document.querySelector('.page-bg-text');
-
 window.addEventListener('scroll', () => {
   const y = window.scrollY;
-  nav?.classList.toggle('scrolled', y > 20);
-
-  // hero bg text: vertical parallax only
-  if (heroBgText) {
-    heroBgText.style.transform = `translateY(calc(-50% + ${y * 0.15}px))`;
-  }
-
-  // page bg text: MUST preserve translateX(-50%) — only add vertical offset
-  if (pageBgText) {
-    pageBgText.style.transform = `translateX(-50%) translateY(${y * 0.06}px)`;
-  }
+  if (heroBgText) heroBgText.style.transform = `translateY(calc(-50% + ${y * 0.15}px))`;
+  if (pageBgText) pageBgText.style.transform  = `translateY(${y * 0.08}px)`;
 });

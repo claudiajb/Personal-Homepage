@@ -32,13 +32,12 @@
   <!-- PAGE HERO -->
   <div class="page-hero">
     <div class="page-hero-bg"></div>
-    <div class="page-bg-text">Works</div>
-    <div class="page-hero-content">
-      <div class="section-label">Karya Visual</div>
-      <h1 class="section-title">Koleksi <em>Desain</em><br>& Kreasi Saya</h1>
+    <div class="page-bg-text">Nature</div> <div class="page-hero-content">
+      <div class="section-label">Galeri Foto</div>
+      <h1 class="section-title">Eksplorasi <em>Alam</em><br>& Keindahan Lansekap</h1>
       <p style="color: var(--text-mid); font-size: 0.92rem; max-width: 480px; margin-top: 16px; font-weight:300; line-height:1.9;">
-        Kumpulan hasil desain yang saya buat menggunakan Canva — mulai dari poster,
-        infografis, konten media sosial, hingga materi presentasi.
+        Kumpulan momen yang saya abadikan dalam perjalanan mengeksplorasi keindahan alam — 
+        mulai dari tenangnya pesisir pantai, kemegahan pegunungan, hingga kesegaran air terjun yang tersembunyi.
       </p>
     </div>
   </div>
@@ -46,252 +45,100 @@
   <!-- FILTER -->
   <div class="gallery-filter">
     <button class="filter-btn active" data-filter="all">Semua</button>
-    <button class="filter-btn" data-filter="poster">Poster</button>
-    <button class="filter-btn" data-filter="infografis">Infografis</button>
-    <button class="filter-btn" data-filter="sosmed">Media Sosial</button>
-    <button class="filter-btn" data-filter="presentasi">Presentasi</button>
+    <button class="filter-btn" data-filter="pantai">Pantai</button>
+    <button class="filter-btn" data-filter="sunset">Sunset</button>
+    <button class="filter-btn" data-filter="air-terjun">Air Terjun</button>
   </div>
-
-  <!--
-  ╔══════════════════════════════════════════════════════════════════╗
-  ║                     PANDUAN GALLERY                             ║
-  ╠══════════════════════════════════════════════════════════════════╣
-  ║                                                                  ║
-  ║  CARA MENAMBAH ITEM GALLERY:                                     ║
-  ║  Salin satu blok <div class="gallery-item ..."> sampai </div>   ║
-  ║  penutupnya, lalu tempel di bawah item terakhir sebelum          ║
-  ║  tag penutup </div> dari gallery-grid.                           ║
-  ║                                                                  ║
-  ║  GANTI bagian ini di setiap item:                                ║
-  ║  1. data-cat="..."   → kategori filter:                          ║
-  ║       poster | infografis | sosmed | presentasi                  ║
-  ║  2. data-src="..."   → path gambar untuk lightbox                ║
-  ║       contoh: data-src="/assets/gallery/foto1.jpg"               ║
-  ║  3. <img src="...">  → path gambar yang ditampilkan              ║
-  ║       contoh: <img src="/assets/gallery/foto1.jpg" alt="...">    ║
-  ║  4. gallery-overlay-title → judul karya                          ║
-  ║  5. gallery-overlay-cat   → label kategori yang tampil           ║
-  ║                                                                  ║
-  ║  KALAU BELUM PUNYA GAMBAR:                                       ║
-  ║  Hapus tag <img> dan biarkan <div class="gallery-placeholder">   ║
-  ║  tetap ada — akan muncul placeholder otomatis.                   ║
-  ║                                                                  ║
-  ║  MENAMBAH KATEGORI FILTER BARU:                                  ║
-  ║  1. Tambah tombol di .gallery-filter:                            ║
-  ║     <button class="filter-btn" data-filter="namabaru">           ║
-  ║       Nama Baru</button>                                         ║
-  ║  2. Pakai data-cat="namabaru" di item gallery yang sesuai.       ║
-  ║                                                                  ║
-  ╚══════════════════════════════════════════════════════════════════╝
-  -->
 
   <!-- GALLERY GRID -->
   <div class="gallery-grid">
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 1
-         Ganti data-cat dengan kategori yang sesuai
-         Ganti data-src dan src img dengan path foto kamu
-         Contoh: <img src="/assets/gallery/poster1.jpg" alt="Poster 1">
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="poster" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="pantai" data-src="">
+      <img src="../assets/gallery/pantai1.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Poster — Item 1</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Pesisir Pantai</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Suasana Golden Hour</span>
       </div>
-      <!-- overlay: ganti teks judul dan kategori sesuai karya -->
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Poster Design 01</div>
-        <div class="gallery-overlay-cat">Poster</div>
+        <div class="gallery-overlay-title">Cahaya di Ujung Laut</div>
+        <div class="gallery-overlay-cat">Pantai</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 2
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="infografis" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="pantai" data-src="">
+      <img src="../assets/gallery/pantai2.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Infografis — Item 2</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Puncak Gunung</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Lansekap Pegunungan</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Infografis 01</div>
-        <div class="gallery-overlay-cat">Infografis</div>
+        <div class="gallery-overlay-title">Di Atas Awan</div>
+        <div class="gallery-overlay-cat">Pegunungan</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 3
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="sosmed" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="air-terjun" data-src="">
+      <img src="../assets/gallery/airTerjun.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Media Sosial — Item 3</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Air Terjun Tersembunyi</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Kesegaran Alam</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Social Media Post 01</div>
-        <div class="gallery-overlay-cat">Media Sosial</div>
+        <div class="gallery-overlay-title">Aliran Jernih</div>
+        <div class="gallery-overlay-cat">Air Terjun</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 4
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="poster" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="pantai" data-src="">
+      <img src="../assets/gallery/pantai3.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Poster — Item 4</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Hutan Pinus</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Ketenangan Hijau</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Poster Design 02</div>
-        <div class="gallery-overlay-cat">Poster</div>
+        <div class="gallery-overlay-title">Labirin Hijau</div>
+        <div class="gallery-overlay-cat">Hutan</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 5
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="presentasi" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="pantai" data-src="">
+      <img src="../assets/gallery/pantai4.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Presentasi — Item 5</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Hutan Pinus</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Ketenangan Hijau</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Slide Presentasi 01</div>
-        <div class="gallery-overlay-cat">Presentasi</div>
+        <div class="gallery-overlay-title">Labirin Hijau</div>
+        <div class="gallery-overlay-cat">Hutan</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 6
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="infografis" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+
+    <div class="gallery-item reveal" data-cat="sunset" data-src="">
+      <img src="../assets/gallery/sunset&pantai.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Infografis — Item 6</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Hutan Pinus</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Ketenangan Hijau</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Infografis 02</div>
-        <div class="gallery-overlay-cat">Infografis</div>
+        <div class="gallery-overlay-title">Labirin Hijau</div>
+        <div class="gallery-overlay-cat">Hutan</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 7
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="sosmed" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
+    <div class="gallery-item reveal" data-cat="sunset" data-src="">
+      <img src="../assets/gallery/sunset.jpeg" alt="Pesisir Pantai">
       <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Media Sosial — Item 7</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
+        <span>Hutan Pinus</span>
+        <span style="font-size:0.7rem; opacity:0.5;">Ketenangan Hijau</span>
       </div>
       <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Social Media Post 02</div>
-        <div class="gallery-overlay-cat">Media Sosial</div>
+        <div class="gallery-overlay-title">Labirin Hijau</div>
+        <div class="gallery-overlay-cat">Hutan</div>
       </div>
     </div>
 
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 8
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="poster" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
-      <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Poster — Item 8</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
-      </div>
-      <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Poster Design 03</div>
-        <div class="gallery-overlay-cat">Poster</div>
-      </div>
     </div>
-
-    <!-- ───────────────────────────────────────────────────────────
-         ITEM 9
-    ─────────────────────────────────────────────────────────────── -->
-    <div class="gallery-item reveal" data-cat="presentasi" data-src="">
-      <!-- GANTI BARIS INI dengan: <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi"> -->
-      <div class="gallery-placeholder">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
-          <rect x="3" y="3" width="18" height="18" rx="2"/>
-          <circle cx="8.5" cy="8.5" r="1.5"/>
-          <path d="M21 15l-5-5L5 21"/>
-        </svg>
-        <span>Presentasi — Item 9</span>
-        <span style="font-size:0.7rem; opacity:0.5;">Ganti dengan foto kamu</span>
-      </div>
-      <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Slide Presentasi 02</div>
-        <div class="gallery-overlay-cat">Presentasi</div>
-      </div>
-    </div>
-
-    <!--
-    ═══════════════════════════════════════════════════════════════
-    TAMBAH ITEM GALLERY BARU DI BAWAH SINI
-    Salin template berikut dan tempel tepat di atas komentar ini:
-
-    <div class="gallery-item reveal" data-cat="KATEGORI" data-src="/assets/gallery/NAMA_FILE.jpg">
-      <img src="/assets/gallery/NAMA_FILE.jpg" alt="Deskripsi karya kamu">
-      <div class="gallery-overlay">
-        <div class="gallery-overlay-title">Judul Karya</div>
-        <div class="gallery-overlay-cat">Kategori</div>
-      </div>
-    </div>
-
-    Ganti:
-    - KATEGORI   → poster / infografis / sosmed / presentasi
-    - NAMA_FILE  → nama file gambar kamu (taruh di /assets/gallery/)
-    ═══════════════════════════════════════════════════════════════
-    -->
-
-  </div>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
